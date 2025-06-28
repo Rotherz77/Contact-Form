@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    background-image: url('/static/car.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.contact-div form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 25px;
+}
+
+.contact-form input, textarea {
+    height: 25px;
+    padding: 0 15px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+.submit-btn:hover {
+    background-color:rgba(255, 68, 0, 0.719);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #000;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotherz || Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+
+<body>
+
+    
+    <section class="contact-form">
+        <div class="contact-div">
+        <h1>Contact Us</h1>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    Send <br> Message
+                </button>
+            </form>
+                    <p id="status-message"></p>
+        </div>
+    </section>
+
+
+    <script src="{{ url_for('static', filename='project.js') }}"></script>
+
+</body>
+
+</html>
